@@ -1,46 +1,61 @@
-//                          METHOD - 3
+//                          METHOD - 1
 
-function vowel_count(str){
-    let vowels = ['a','e','i','o','u'];
 
-    let strArr = []
-    for(let i=0; i<str.length; i++)
-        strArr[i] = str[i]
 
+function vowel_counter(str){
     let count = 0;
-
-    let i=0;
-    let j=0;
-
-    while(i < strArr.length){
-        if(strArr[i] == vowels[j]){
+    for(let i=0; i<str.length; i++){
+        if(str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u')
             count ++;
-            i++;
-            j=0;
-        }
-        else{
-            j++;
-            if(j == strArr.length){
-                i++;
-                j=0;
-            }
-        }
     }
     return count;
-
 }
 
-console.log(vowel_count("javascript"));
-console.log(vowel_count("python"));
+console.log(vowel_counter("javascript"));
+
+
+
+
+//                          METHOD - 2
+
+// function vowel_count(str){
+//     let vowels = ['a','e','i','o','u'];
+
+//     let strArr = []
+//     for(let i=0; i<str.length; i++)
+//         strArr[i] = str[i]
+
+//     let count = 0;
+
+//     let i=0;
+//     let j=0;
+
+//     while(i < strArr.length){
+//         if(strArr[i] == vowels[j]){
+//             count ++;
+//             i++;
+//             j=0;
+//         }
+//         else{
+//             j++;
+//             if(j == strArr.length){
+//                 i++;
+//                 j=0;
+//             }
+//         }
+//     }
+//     return count;
+
+// }
+
+// console.log(vowel_count("javascript"));
+// console.log(vowel_count("python"));
 
 
 
 
 
-
-
-
-//                          METHOD - 1
+//                          METHOD - 3
 
 // function vowel_count(str){
 //     return str.replace(/[^aeiou]/g, "").length;
@@ -54,7 +69,7 @@ console.log(vowel_count("python"));
 
 
 
-//                          METHOD - 2
+//                          METHOD - 4
 
 // function vowel_count(str){
 //     let vowelArr = ['a','e','i','o','u'];
