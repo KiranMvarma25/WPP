@@ -1,1 +1,1 @@
-return outStr.join('');
+let outWord = "";
